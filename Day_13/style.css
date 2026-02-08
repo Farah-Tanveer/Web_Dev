@@ -1,0 +1,9 @@
+.highlight {
+    color: white;
+    background-color: teal;
+    padding: 10px;
+}
+.dark {
+    background-color: #111;
+    color: white;
+}
