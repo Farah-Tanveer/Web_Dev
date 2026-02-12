@@ -33,10 +33,15 @@ When the button is clicked:
 ## 📂 Project Structure
 
 Interactive-Bulb/
+<br>
 │
+<br>
 ├── index.html
+<br>
 ├── style.css
+<br>
 ├── script.js
+<br>
 └── README.md
 
 
@@ -49,63 +54,68 @@ Interactive-Bulb/
 ```js
 var bulb = document.querySelector("#bulb");
 var btn = document.querySelector("#toggleBtn");
+```
 
 
 Selects the bulb and button elements using their IDs.
 
 ### 2️⃣ Event Listener
+```js
 btn.addEventListener("click", function () {});
-
+```
 
 Listens for click events on the button.
 
 ### 3️⃣ Class Toggle
+```js
 bulb.classList.toggle("on");
-
-
+```
 Adds the on class if it does not exist and removes it if it does.
 This switches between OFF and ON visual states.
 
 ### 4️⃣ Conditional Button Text
+```js
 if (bulb.classList.contains("on")) {
     btn.textContent = "Turn Off";
 } else {
     btn.textContent = "Turn On";
 }
-
+```
 
 Updates button text based on the current bulb state.
-
 ## 🎨 CSS Explanation
 🔹 Layout Centering (Flexbox)
+```
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+```
 
+> 100vh → Full screen height
 
-100vh → Full screen height
+> display: flex → Enables flexbox
 
-display: flex → Enables flexbox
+> justify-content → Horizontal centering
 
-justify-content → Horizontal centering
-
-align-items → Vertical centering
+> align-items → Vertical centering
 
 🔹 Bulb OFF State
+```
 #bulb {
     background: radial-gradient(circle at 30% 30%, 
                 #666 0%, 
                 #444 60%, 
                 #222 100%);
 }
-
+```
 
 Creates a 3D dark glass effect using radial gradients.
 
 🔹 Bulb ON State
+```
 .on {
     background: radial-gradient(circle at 30% 30%, 
                 #fffde7 0%, 
@@ -119,63 +129,65 @@ Creates a 3D dark glass effect using radial gradients.
         0 0 80px #ffc107,
         0 0 120px rgba(255, 235, 59, 0.6);
 }
+```
 
+> Brighter center
 
-Brighter center
+> Layered shadows
 
-Layered shadows
-
-Realistic glowing effect
+> Realistic glowing effect
 
 🔹 Smooth Transitions
+```
 transition: all 0.4s ease;
-
+```
 
 Ensures smooth animation between ON and OFF states.
 
 ## ✨ Features
 
-Realistic glowing effect
+> Realistic glowing effect
 
-Smooth animations
+> Smooth animations
 
-Dynamic button text
+> Dynamic button text
 
-Responsive centered layout
+> Responsive centered layout
 
-Clean UI design
+> Clean UI design
 
 ## 📚 Concepts Practiced
 
-DOM Manipulation
+> DOM Manipulation
 
-Event Handling
+> Event Handling
 
-Conditional Logic
+> Conditional Logic
 
-Class Management
+> Class Management
 
-CSS Gradients
+> CSS Gradients
 
-CSS Shadows
+> CSS Shadows
 
-Flexbox Layout
+> Flexbox Layout
 
-UI State Design
+> UI State Design
 
 ## 🔮 Future Improvements
 
-Add bulb holder base
+> Add bulb holder base
 
-Add flicker animation
+> Add flicker animation
 
-Add sound effect
+> Add sound effect
 
-Add multiple bulbs
+> Add multiple bulbs
 
-Dark room lighting effect
+> Dark room lighting effect
 
 ## 👩‍💻 Author
 
 Farah Tanveer
+<br>
 Frontend Learning Journey 🚀
