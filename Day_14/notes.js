@@ -92,3 +92,13 @@ let p = document.createElement("p");
    - It is NOT visible on the page yet
 */
 
+/*
+   Topics Covered Today
+   Selecting multiple elements (querySelectorAll)
+   Looping over elements with forEach
+   Manipulating attributes (getAttribute, setAttribute)
+   Creating & appending elements dynamically (createElement, appendChild)
+   Removing elements (remove())
+   Understanding event delegation
+   Adding/removing/toggling multiple classes
+*/
