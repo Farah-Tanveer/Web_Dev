@@ -132,4 +132,37 @@ console.log("End");
 /*
 it prints:
 Start End Inside
+
+Why Even When It’s 0?
+Even if delay = 0, setTimeout is still asynchronous.
+
+What actually happens:
+1️⃣ console.log("Start") → runs immediately
+2️⃣ setTimeout is sent to Web APIs
+3️⃣ JS continues
+4️⃣ console.log("End") runs
+5️⃣ Event loop pushes Inside to call stack
+6️⃣ Then Inside prints
+
+So 0 does NOT mean:
+Run instantly before next line
+It means:
+Run after current call stack is empty
 */
+console.log("A");
+
+setTimeout(() => {
+    console.log("B");
+}, 1000);
+
+setTimeout(() => {
+    console.log("C");
+}, 0);
+
+console.log("D");
+
+// ✅ Correct Output
+A
+D
+C
+B
