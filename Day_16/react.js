@@ -189,7 +189,7 @@ Component
 JSX
 State
 useState
-Re-rende
+Re-render
 Declarative UI
 Event handling
 
@@ -201,13 +201,4 @@ Event handling
 ✔ Handle button click
 ✔ Update UI dynamically
 
-If you can build:
-
-Counter
-Toggle button
-Show/Hide text
-You understood Day 16 properly.
-Tomorrow (Day 17) we move to:
-Props
-Reusable components
-Passing data between components*/
+*/
