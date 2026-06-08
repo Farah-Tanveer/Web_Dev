@@ -1,0 +1,19 @@
+/*CSS Flexbox (Flexible Box Layout)
+CSS Flexbox is short for the CSS Flexible Box Layout module.
+
+Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.
+A flexbox always consists of:
+
+A Flex Container - The parent (container) element, where the display property is set to flex or inline-flex
+One or more Flex Items - The direct children of the flex container automatically becomes flex items
+The flex container element can have the following properties:
+
+display - Must be set to flex or inline-flex
+flex-direction - Sets the display-direction of flex items
+flex-wrap - Specifies whether the flex items should wrap or not
+flex-flow - Shorthand property for flex-direction and flex-wrap
+justify-content - Aligns the flex items when they do not use all available space on the main-axis (horizontally)
+align-items - Aligns the flex items when they do not use all available space on the cross-axis (vertically)
+align-content - Aligns the flex lines when there is extra space in the cross axis and flex items wrap
+
+*/
