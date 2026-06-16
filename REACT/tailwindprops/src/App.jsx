@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <h1 className="text-3xl font-bold italic">Tailwind CSS</h1>
-      <Card obj={myArr}/>
-      <Card/>
+      <Card username="Farah" btnText="Click"/>
+      <Card username="Maria" />
     </>
   )
 }
